@@ -122,7 +122,8 @@ namespace WindowsFormsApp1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+            Graphics g = panel2.CreateGraphics();
+            g.Clear(Color.Black);
         }
     }
 }
