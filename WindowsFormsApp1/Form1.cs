@@ -59,8 +59,12 @@ namespace WindowsFormsApp1
 
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void TextBox2_TextChanged(object sender, EventArgs e)
+        {}
+
+        private void Button1_Click(object sender, EventArgs e)
         {
+            
             if (comboBox1.SelectedItem.ToString() == ("Треугольник"))
             {
                 string[] ss = textBox2.Text.Split(' ');
@@ -69,22 +73,20 @@ namespace WindowsFormsApp1
                 c = Convert.ToInt32(ss[2]);
                 d = Convert.ToInt32(ss[3]);
                 f = Convert.ToInt32(ss[4]);
-                g = Convert.ToInt32(ss[5]);
-                var Pen = new Pen(Color.White, 3);
-                panel2.CreateGraphics();
-
-
+                t = Convert.ToInt32(ss[5]);
+                var Pen = new Pen(Color.White, 5);
+                Graphics g = panel2.CreateGraphics();
+                g.DrawLine(Pen, a, b, c, d);
+                g.DrawLine(Pen, c, d, f, t);
+                g.DrawLine(Pen, f, t, a, b);
             }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
+            
+            
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
-
+            Graphics g = e.Graphics;
         }
     }
 }
