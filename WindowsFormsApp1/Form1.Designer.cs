@@ -69,6 +69,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Очистить";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // draw
             // 
@@ -84,9 +85,9 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Location = new System.Drawing.Point(178, 153);
+            this.panel2.Location = new System.Drawing.Point(0, 96);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(462, 297);
+            this.panel2.Size = new System.Drawing.Size(851, 354);
             this.panel2.TabIndex = 4;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 

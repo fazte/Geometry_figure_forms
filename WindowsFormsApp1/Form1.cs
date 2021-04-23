@@ -22,6 +22,8 @@ namespace WindowsFormsApp1
         int b1;
         int r;
         int t;
+        int s;
+        int p;
         public Form1()
         {
             InitializeComponent();
@@ -64,7 +66,7 @@ namespace WindowsFormsApp1
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            
+
             if (comboBox1.SelectedItem.ToString() == ("Треугольник"))
             {
                 string[] ss = textBox2.Text.Split(' ');
@@ -80,13 +82,47 @@ namespace WindowsFormsApp1
                 g.DrawLine(Pen, c, d, f, t);
                 g.DrawLine(Pen, f, t, a, b);
             }
-            
-            
-        }
+            else
+            if (comboBox1.SelectedItem.ToString() == ("Круг"))
+            {
+                string[] ss = textBox2.Text.Split(' ');
+                r = Convert.ToInt32(ss[0]);
+                var Pen = new Pen(Color.White, 5);
+                Graphics g = panel2.CreateGraphics();
+                g.DrawEllipse(Pen, 120, 120, r, r);
 
+
+            }
+            else
+            if (comboBox1.SelectedItem.ToString() == ("Отрезок"))
+            {
+                string[] ss = textBox2.Text.Split(' ');
+                s = Convert.ToInt32(ss[0]);
+                var Pen = new Pen(Color.White, 5);
+                Graphics g = panel2.CreateGraphics();
+                g.DrawLine(Pen, 80, 80, s, s);
+            }
+            else
+            if (comboBox1.SelectedItem.ToString() == ("Прямоугольник"))
+            {
+                string[] ss = textBox2.Text.Split(' ');
+                a1 = Convert.ToInt32(ss[0]);
+                b1 = Convert.ToInt32(ss[1]);
+                var Pen = new Pen(Color.White, 5);
+                Graphics g = panel2.CreateGraphics();
+                g.DrawRectangle(Pen, 100, 100, a1, b1);
+
+
+            }
+        }
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
             Graphics g = e.Graphics;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
