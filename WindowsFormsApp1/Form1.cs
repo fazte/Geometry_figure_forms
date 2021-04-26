@@ -76,7 +76,7 @@ namespace WindowsFormsApp1
                 d = Convert.ToInt32(ss[3]);
                 f = Convert.ToInt32(ss[4]);
                 t = Convert.ToInt32(ss[5]);
-                var Pen = new Pen(Color.White, 5);
+                var Pen = new Pen(Color.Pink, 10);
                 Graphics g = panel2.CreateGraphics();
                 g.DrawLine(Pen, a, b, c, d);
                 g.DrawLine(Pen, c, d, f, t);
@@ -87,7 +87,7 @@ namespace WindowsFormsApp1
             {
                 string[] ss = textBox2.Text.Split(' ');
                 r = Convert.ToInt32(ss[0]);
-                var Pen = new Pen(Color.White, 5);
+                var Pen = new Pen(Color.Pink, 5);
                 Graphics g = panel2.CreateGraphics();
                 g.DrawEllipse(Pen, 120, 120, r, r);
 
@@ -98,7 +98,7 @@ namespace WindowsFormsApp1
             {
                 string[] ss = textBox2.Text.Split(' ');
                 s = Convert.ToInt32(ss[0]);
-                var Pen = new Pen(Color.White, 5);
+                var Pen = new Pen(Color.Pink, 5);
                 Graphics g = panel2.CreateGraphics();
                 g.DrawLine(Pen, 80, 80, s, s);
             }
@@ -108,7 +108,7 @@ namespace WindowsFormsApp1
                 string[] ss = textBox2.Text.Split(' ');
                 a1 = Convert.ToInt32(ss[0]);
                 b1 = Convert.ToInt32(ss[1]);
-                var Pen = new Pen(Color.White, 5);
+                var Pen = new Pen(Color.Pink, 5);
                 Graphics g = panel2.CreateGraphics();
                 g.DrawRectangle(Pen, 100, 100, a1, b1);
 
@@ -123,7 +123,7 @@ namespace WindowsFormsApp1
         private void button2_Click(object sender, EventArgs e)
         {
             Graphics g = panel2.CreateGraphics();
-            g.Clear(Color.Black);
+            g.Clear(Color.White);
         }
     }
 }

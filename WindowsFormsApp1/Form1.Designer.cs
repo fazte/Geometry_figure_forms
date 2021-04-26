@@ -84,10 +84,10 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Location = new System.Drawing.Point(0, 96);
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Location = new System.Drawing.Point(0, 97);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(851, 354);
+            this.panel2.Size = new System.Drawing.Size(851, 353);
             this.panel2.TabIndex = 4;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
