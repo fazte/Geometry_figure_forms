@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1\WindowsFormsApp1.csproj", "{5EC0CDA2-DCE3-4E26-B0DF-1898ECA4AD3A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "geometry_figure_forms", "WindowsFormsApp1\geometry_figure_forms.csproj", "{5EC0CDA2-DCE3-4E26-B0DF-1898ECA4AD3A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Geometry_figure", "Geometry_figure\Geometry_figure.csproj", "{7EB844E9-37E3-490F-B6AB-7CC79BC3FB4B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Geometry_figure", "Geometry_figure\Geometry_figure.csproj", "{7EB844E9-37E3-490F-B6AB-7CC79BC3FB4B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
