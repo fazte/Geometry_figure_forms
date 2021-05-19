@@ -42,7 +42,7 @@ namespace WindowsFormsApp1
         {
             if (comboBox1.SelectedItem.ToString() == ("Треугольник"))
             {
-                label2.Text = ("Введите 6 координат ");
+                label2.Text = ("Введите 3 координаты ");
             }
             else if (comboBox1.SelectedItem.ToString() == ("Прямоугольник"))
             {
@@ -129,6 +129,16 @@ namespace WindowsFormsApp1
         }
 
         private void button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
 
         }
