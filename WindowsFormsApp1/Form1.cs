@@ -22,6 +22,7 @@ namespace WindowsFormsApp1
         int r;
         int t;
         int s;
+        int l;
         public Form1()
         {
             InitializeComponent();
@@ -64,7 +65,8 @@ namespace WindowsFormsApp1
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            var Pen = new Pen(colorDialog2.Color, 10);
+            l = Convert.ToInt32(numericUpDown1.Text);
+            var Pen = new Pen(colorDialog2.Color, l);
             if (comboBox1.SelectedItem.ToString() == ("Треугольник"))
             {
                 string[] ss = textBox2.Text.Split(' ');
