@@ -141,5 +141,28 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            Bitmap bm = new Bitmap(panel2.Width, panel2.Height);
+            panel1.DrawToBitmap(bm, new System.Drawing.Rectangle(0, 0, bm.Width, bm.Height));
+
+            SaveFileDialog sfd = new SaveFileDialog();
+
+            if (sfd.ShowDialog() == DialogResult.OK)
+            {
+                bm.Save(sfd.FileName + ".bmp");
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                panel2.BackgroundImage = Image.FromFile(ofd.FileName);
+            }
+            ofd.Dispose();
+        }
     }
 }
