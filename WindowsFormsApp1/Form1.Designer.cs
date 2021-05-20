@@ -105,7 +105,7 @@
             "Прямоугольник",
             "Отрезок",
             "Круг"});
-            this.comboBox1.Location = new System.Drawing.Point(202, 0);
+            this.comboBox1.Location = new System.Drawing.Point(209, 12);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(193, 21);
             this.comboBox1.TabIndex = 5;
@@ -113,7 +113,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(202, 48);
+            this.textBox2.Location = new System.Drawing.Point(209, 48);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(193, 20);
             this.textBox2.TabIndex = 6;
@@ -122,7 +122,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 8);
+            this.label1.Location = new System.Drawing.Point(9, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(97, 13);
             this.label1.TabIndex = 7;
@@ -131,7 +131,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 55);
+            this.label2.Location = new System.Drawing.Point(9, 51);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(112, 13);
             this.label2.TabIndex = 8;
@@ -139,7 +139,7 @@
             // 
             // btColor
             // 
-            this.btColor.Location = new System.Drawing.Point(6, 33);
+            this.btColor.Location = new System.Drawing.Point(9, 32);
             this.btColor.Name = "btColor";
             this.btColor.Size = new System.Drawing.Size(26, 26);
             this.btColor.TabIndex = 9;
@@ -148,7 +148,7 @@
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(76, 38);
+            this.numericUpDown1.Location = new System.Drawing.Point(70, 34);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(48, 20);
             this.numericUpDown1.TabIndex = 10;
